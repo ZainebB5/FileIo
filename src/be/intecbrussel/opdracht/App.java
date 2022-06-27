@@ -24,18 +24,7 @@ public class App {
         }catch (IOException e){
             e.printStackTrace();
         }
-        try{
-            Path relativePath = Paths.get("C:\\Users\\ZainebB\\IdeaProjects\\FileIO\\MyFolder\\FromPearlToZaineb\\animal");
-            Files.createDirectories(relativePath.getParent());
-            if(Files.notExists(relativePath)){
-                Files.createFile(relativePath);
-                System.out.println("file created");
-            }else{
-                System.out.println("file already exist");
-            }
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+
         writeToFile();
 
 //        Path path = Paths.get("MyFolder/FromZainebToPearl/message");
